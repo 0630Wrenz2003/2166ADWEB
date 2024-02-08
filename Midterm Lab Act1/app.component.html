@@ -1,0 +1,143 @@
+<div>
+
+
+<!--
+  <h2>Date formats</h2>
+  This line shows the full date:- {{presentDate | date:'fullDate'}}<br>
+  <br>This line shows the short date:- {{presentDate | date:'shortDate'}}<br>
+  <br>This line shows the medium date:- {{presentDate | date:'mediumDate'}}<br>
+  <br>This line shows the long date:- {{presentDate | date:'longDate'}}<br>
+  <h2>Data with parameters</h2>
+  This will show a formatted date:- {{presentDate | date:'M/dd/yyyy'}}<br/>
+  <br>This indicates the hours and minutes:- {{presentDate | date:'h:mm'}}
+  <h2>Chained Pipes</h2>
+  Date with uppercase:- {{presentDate | date:'fullDate' | uppercase}}<br>
+  <br>Date with lowercase:- {{presentDate | date:'medium' | lowercase}}
+-->
+  <!--<h2>Async Pipe</h2>
+  seconds changing in time: {{ time$ | async | date:'mediumTime'}}-->
+
+
+
+<!--JSON Pipe-->
+<div>
+  <h2>Json pipe</h2>
+  
+  <p class="text-center fw-bolder ">{{object | json}}</p>
+  <p class="fw-bolder">What is the value of PI {{deciNum1}}</p>
+  <p class="fw-bolder">My percentage: {{deciNum2}}</p>
+  <p class="fw-bolder">Bacteria killing percentage: {{deciNum3}} % </p>
+</div>
+
+ <!-- Section-->
+ 
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+
+
+
+                                    <!--Slice Pipes-->
+                                    <h5 class="fw-bolder">{{Fruits | slice:2}}</h5>
+                                    <!-- Product price-->
+
+                                    {{text2 | uppercase}}
+
+
+                                    <!--Currency Pipes-->
+                                    {{ priceMango | currency: 'PHP'}}<br>
+                                    {{ a | percent}} Off<br>
+                                    until {{presentDate | date:'06/30/yyyy'}}
+                                    
+
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mb-5">
+                      <div class="card h-100">
+                          <!-- Product image-->
+                          <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                          <!-- Product details-->
+                          <div class="card-body p-4">
+                              <div class="text-center">
+                                  <!-- Product name-->
+
+
+
+                                  <!--Slice Pipes-->
+                                  <h5 class="fw-bolder">{{Fruits | slice:1:2}}</h5>
+                                  <!-- Product price-->
+
+                                  {{text1 | uppercase}}
+                                  <!--Currency Pipes-->
+                                  {{ priceOrange | currency: 'PHP'}}<br>
+                                  {{b | percent}} Off<br>
+                                  until {{presentDate | date:'2/15/yyyy'}}
+                              </div>
+                          </div>
+                          <!-- Product actions-->
+                          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                              
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+
+
+                                <!--Slice Pipes-->
+                                <h5 class="fw-bolder">{{Fruits | slice:0:1}}</h5>
+                                <!-- Product price-->
+                                {{text3 | uppercase}}
+
+
+
+                                <!--Currency Pipes-->
+                                {{ priceApple | currency: 'PHP'}}<br>
+                                {{c | percent}} Off<br>
+                                until {{presentDate | date:'12/25/yyyy'}}
+                            </div>
+                        </div>
+
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    
+                        </div>
+                    </div>
+                </div>
+              
+
+
+
+
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+</div>
