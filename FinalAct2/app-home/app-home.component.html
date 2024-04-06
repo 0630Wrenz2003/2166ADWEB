@@ -1,0 +1,144 @@
+
+<div class="container mt-5">
+
+    <mat-toolbar color="primary">
+
+        <mat-badge [matBadge]="badgeCount" matBadgePosition="above after"><mat-icon>book</mat-icon>
+        </mat-badge>
+
+        <div class="spacer"></div>
+        <a mat-button routerLink="/app-home" routerLinkActive="active">Drivers</a>
+        <a mat-button routerLink="/teams" routerLinkActive="active">Teams</a>
+        <a mat-button>World Champions</a>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+
+    <br>
+
+    
+
+    <ng-container *ngFor="let item of items">
+        <div class="row">
+
+            <div class="col-lg-6 mb-4" id="card4">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-icon (click)="toggleBookmark(item)" (click)="incrementBadge()"
+                            [color]="isBookmarked(item) ? 'warn' : 'primary'">
+                            {{ isBookmarked(item) ? 'bookmark' : 'bookmark_border' }}
+                        </mat-icon>
+                        <mat-card-title>Niki Lauda</mat-card-title>
+                        <mat-card-subtitle>Ferrari</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image
+                        src="https://cdn-6.motorsport.com/images/amp/YN1jPne2/s1000/niki-lauda-mclaren-mp4-2-tag-1.jpg">
+                    <mat-card-content>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-icon (click)="toggleBookmark(item)" (click)="incrementBadge()"
+                            [color]="isBookmarked(item) ? 'warn' : 'primary'">
+                            {{ isBookmarked(item) ? 'bookmark' : 'bookmark_border' }}
+                        </mat-icon>
+                        <mat-card-title>Senna Ayrton</mat-card-title>
+                        <mat-card-subtitle>Mclaren</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/A/AYRSEN01_Ayrton_Senna/tne0430ap18.jpg.img.640.medium.jpg/1421858452652.jpg">
+                    <mat-card-content>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-icon (click)="toggleBookmark(item)" (click)="incrementBadge()"
+                            [color]="isBookmarked(item) ? 'warn' : 'primary'">
+                            {{ isBookmarked(item) ? 'bookmark' : 'bookmark_border' }}
+                        </mat-icon>
+                        <mat-card-title>Michael Shcumacher</mat-card-title>
+                        <mat-card-subtitle>Ferrari</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-KdhAg52vxf-nenwTnTGScQ8tPi1f508tmpJAw8YN9g&s">
+                    <mat-card-content>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            <div class="col-lg-6 mb-4">
+                <mat-card class="example-card">
+                    <mat-card-header>
+                        <mat-icon (click)="toggleBookmark(item)" (click)="incrementBadge()"
+                            [color]="isBookmarked(item) ? 'warn' : 'primary'">
+                            {{ isBookmarked(item) ? 'bookmark' : 'bookmark_border' }}
+                        </mat-icon>
+                        <mat-card-title>Lewis Hamilton</mat-card-title>
+                        <mat-card-subtitle>Mercedes</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image
+                        src="https://media.formula1.com/content/dam/fom-website/drivers/2024Drivers/hamilton.jpg.img.640.medium.jpg/1708362076344.jpg">
+                    <mat-card-content>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                            passages, and more recently with desktop publishing software like Aldus PageMaker including
+                            versions of Lorem Ipsum.
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </ng-container>
+</div>
