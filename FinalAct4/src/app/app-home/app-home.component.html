@@ -1,0 +1,38 @@
+<div class="container mt-5">
+
+    <mat-toolbar color="primary">
+
+            <button mat-button [matMenuTriggerFor]="menu"><mat-icon>edit_document</mat-icon></button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="/add-blog">Write a blog</button>
+                <button mat-menu-item routerLink="/del-blog">Delete a blog</button>
+            </mat-menu>
+
+            <div class="spacer"></div>
+            <a mat-button routerLink="/app-home" routerLinkActive="active">Blog</a>
+            <a mat-button routerLink="/teams" routerLinkActive="active">Teams</a>
+            <a mat-button>World Champions</a>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+
+    <br>
+
+
+    <div class="row" *ngFor="let book of books">
+
+        <div class="col-lg-6 mb-4">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <mat-card-title>{{book.title}}</mat-card-title>
+                    <mat-card-subtitle>{{book.team}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image
+                    src="https://cdn.racingnews365.com/_1092x683_crop_center-center_85_none/MP93962.jpg?v=1709110466">
+                <mat-card-content>
+                    <p>{{book.description}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+    </div>
+</div>

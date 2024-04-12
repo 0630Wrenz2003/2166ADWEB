@@ -1,0 +1,24 @@
+
+<div class="container mt-5">
+
+    <mat-toolbar color="primary">
+
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>edit_document</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/add-blog">Write a blog</button>
+            <button mat-menu-item routerLink="/del-blog">Delete a blog</button>
+        </mat-menu>
+
+        <div class="spacer"></div>
+        <a mat-button routerLink="/app-home" routerLinkActive="active">Blog</a>
+        <a mat-button routerLink="/teams" routerLinkActive="active">Teams</a>
+        <a mat-button>World Champions</a>
+    </mat-toolbar>
+
+
+    <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile><img src="https://www.thefactsite.com/wp-content/uploads/2017/11/red-bull-facts-1.webp"></mat-grid-tile>
+        <mat-grid-tile><img src="https://i.pinimg.com/originals/c6/35/f1/c635f14b99a4a3645b1d992a20cbfd52.jpg"></mat-grid-tile>
+        <mat-grid-tile><img src="https://w0.peakpx.com/wallpaper/543/704/HD-wallpaper-mercedes-amg-petronas-motorsport-f1-silk-flag-racing-team-formula-1-mercedes-racing.jpg"></mat-grid-tile>
+        <mat-grid-tile><img src="https://w0.peakpx.com/wallpaper/877/255/HD-wallpaper-williams-f1-formula-1-logo-racing-artwork-sports.jpg"></mat-grid-tile>
+      </mat-grid-list>

@@ -1,0 +1,49 @@
+.mat-toolbar{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .mat-button{
+     color: white;
+  }
+  .spacer{
+    flex: 1 1 auto;
+  }
+
+  body{
+    background-image: url('https://www.wsupercars.com/wallpapers-regular/Formula-1/Alfa-Romeo/2023-Formula1-Alfa-Romeo-C43-002-1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 85%;
+
+}
+
+.comp{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61); /* Adjust the color and opacity as needed */
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust the color as needed */
+    z-index: 1; /* Ensure the title is above the overlay */
+  }
+
+  .lead-paragraph {
+    position: absolute;
+    bottom: 350px; /* Adjust the vertical positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Adjust the color as needed */
+    z-index: 1; /* Ensure the paragraph is above the overlay */
+  }

@@ -1,0 +1,29 @@
+
+.item {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+  }
+  .example-card {
+    max-width: 400px;
+  }
+  
+  .mat-toolbar{
+    background-color: rgb(255, 78, 78);
+    color: white;
+  }
+  .mat-button{
+     color: white;
+  }
+  .spacer{
+    flex: 1 1 auto;
+  }
+
+  .active {
+    background-color: gray; /* Define your styles for the active state */
+  }
